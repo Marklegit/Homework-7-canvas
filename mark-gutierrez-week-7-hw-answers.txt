@@ -1,0 +1,73 @@
+Mark Gutiérrez Week 7 Homework part 2
+
+1. Who first introduced canvas and in what year? and what was it used for?
+The canvas was created by Apple in 2004; it was in the Mac OS X Webkit component. The canvas was used to power different applications like for dashboards, Safari(Browser), and widgets.
+
+2. What is canvas 2d and what does 2d stand for?
+Canvas 2D is an HTML5 element that paired with JavaScript can draw graphics. 2D stands for two-dimmensional space in geometry and it's represeneted by X and Y, which are two values/ parameters required to determine the position of an element.
+
+3. How do you define the canvas element?
+You can define the canvas element in the index.html file by using the tag: 
+<canvas></canvas>.
+
+4. The canvas element only supports the use of 2 other attributes aside from the id (or class) attributes. What are they?
+
+5. What is the default canvas size (width x height)?
+The default canvas size is 300w x 150w.
+
+6. If no width or height attribute is added to the canvas element in index.html, and no background, width, or height properties within the canvas element/id in the external stylesheet, or width or height in the JavaScript file, will anything render to the page?
+Nothing wil show. You need at least a background to show, since the canvas by default has a width and height.
+
+7. If the width and height are set in ctx.fillRect() only, and the width and height were set to greater than 300w x 150h, like 600w x 400h, for example, what width and height of canvas would render to the page?
+If the width and height of ctx.fillRect() exceeds over 300w x 150h, then the size that would render would be 300w x 150h.
+
+
+8. To get access to the actual drawing interface in canvas, what do we first need to create? And what is that exactly?
+To access the drawing interface we need to create a context. Context is an object that provides the drawing interface with its methods.
+
+9. What are the 2 main drawing styles? What are each for and what are they called?
+You can choose from 2 drawing styles, for two-dimensional graphics use context "2D" or for three-dimensional graphics use context "Webgl".
+
+10. How can we access our drawing context once we have retrieved our canvas element by id? Which built-in HTML5 canvas method does that for us and what is it set on? Give me the variable name and the value it is assigned.
+We can access the drawing context using the HTML5 canvas built-in .getContext() method. 
+
+11. What are the two primitive shapes canvas supports?
+canvas supports only two primitive shapes, rectangles and "paths.paths".
+
+12. How are all other shapes (other than the primitive rectangle or path) created in canvas? And what kind of functions help us create complex shapes?
+All other shapes are created with a combination of paths. There are many built-in canvas path drawing functions that we can use to create more complex shapes.
+
+13. What are the 3 built-in functions in canvas that draw rectangles in canvas? Tell me the function names and give me the names of the parameters passed in to them. Also, describe what each parameter stands for.
+The 3 built-in functions that draw rectangles are:
+1. fillRect()
+Syntax: 
+ctx.fillRect(x, y, width, height);
+Parameters:
+x: The x-axis coordinate, it is positioned in the top-left corner of a rectangle.
+y: The y-axis coordinate, it is postioned in the top-left corner of a rectangle.
+width: This represents the width of the rectangle. Positive values are to the right and negative values are to the left.
+height: This represents the height of the rectangle. Positive values are down and negative values are up.
+
+2. strokeRect()
+Syntax:
+ctx.strokeRect(x, y, width, height);
+Parameters:
+x: The x-axis coordinate is the starting point of a rectangle.
+y: The y-axis is coordinate the starting point of a rectangle.
+width: The rectangle's width. Right side is positive and left is negative.
+height: The rectangle's height. Down represents positive values and up represents negative values.
+
+3. clearRect()
+Syntax:
+ctx.clearRect(x, y, width, height);
+Parameters:
+x: the x-axis coordinate and starting point of a rectangle.
+y: the y-axis coordinate and starting point of a rectangle.
+width: the width of the rectangle. Right is positive and left is negative.
+height: the height of the rectangle. Positive points down and Negative points up. 
+
+14.Describe what a path is in canvas.
+In canvas a path is a list of points connected by segments of lines that can have different shapes.
+
+15. What are the extra steps to drawing paths in canvas?
+The extra steps to drawing paths are to first draw a path, use drawing commnads to draw into the path, like beginPath(), movePath(), and closePath(). Lastly, once the path has been created add a stroke() method or a fill() method to render it.
