@@ -11,6 +11,7 @@ You can define the canvas element in the index.html file by using the tag:
 <canvas></canvas>.
 
 4. The canvas element only supports the use of 2 other attributes aside from the id (or class) attributes. What are they?
+Width and Height.
 
 5. What is the default canvas size (width x height)?
 The default canvas size is 300w x 150w.
@@ -29,10 +30,11 @@ To access the drawing interface we need to create a context. Context is an objec
 You can choose from 2 drawing styles, for two-dimensional graphics use context "2D" or for three-dimensional graphics use context "Webgl".
 
 10. How can we access our drawing context once we have retrieved our canvas element by id? Which built-in HTML5 canvas method does that for us and what is it set on? Give me the variable name and the value it is assigned.
-We can access the drawing context using the HTML5 canvas built-in .getContext() method. 
+We can access the drawing context using the HTML5 canvas built-in .getContext() method.
+let ctx = canvas.getContext("2D");
 
 11. What are the two primitive shapes canvas supports?
-canvas supports only two primitive shapes, rectangles and "paths.paths".
+canvas supports only two primitive shapes, rectangles and paths.
 
 12. How are all other shapes (other than the primitive rectangle or path) created in canvas? And what kind of functions help us create complex shapes?
 All other shapes are created with a combination of paths. There are many built-in canvas path drawing functions that we can use to create more complex shapes.
